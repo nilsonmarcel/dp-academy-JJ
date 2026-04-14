@@ -187,7 +187,7 @@ section.hero::before {
 }
 
 
-.img-about {  
+.img-about {
     position: relative;
 }
 
@@ -216,7 +216,7 @@ section.hero::before {
 
 }
 
-.txt-about h3 {    
+.txt-about h2 {
     font-size: 2rem;
     color: var(--cor-accent);
 }
@@ -225,7 +225,7 @@ section.hero::before {
     font-size: 1rem;
     color: var(--cor-style-p);
     margin: 40px 0 46px 0;
-    
+
 }
 
 .txt-about .border {
@@ -242,4 +242,129 @@ section.hero::before {
 
 .txt-about .border span {
     color: var(--cor-accent);
+}
+
+/* Estilo Metodologia */
+
+.Metodoligia {
+    background-color: var(--cor-primary-body);
+    padding: 80px 28px 50px 40px;
+}
+
+.interface-meto {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.Metodoligia .card-meto {
+    width: 352px;
+    height: 208px;
+
+}
+
+.Metodoligia .card-meto i {
+    color: var(--cor-logo);
+    font-size: 1.8rem;
+
+}
+
+.Metodoligia .card-meto h3 {
+    color: var(--cor-accent);
+    padding: 20px 0;
+}
+
+.Metodoligia .card-meto p {
+    color: var(--cor-style-p);
+    font-size: 0.8rem;
+}
+
+/* Estilo Medalhas */
+
+.medalhas {
+    background-color: var(--cor-about);
+    font-size: 0.8rem;
+    padding: 40px 60px 50px 40px;
+    color: var(--cor-accent);
+}
+
+.medalhas article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.medalhas span {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.box-green span {
+    color: var(--cor-logo);
+}
+
+/* Estilo programa de treinamento */
+
+.programa-tr {
+    background-color: var(--cor-primary-body);
+    padding: 60px;
+}
+
+.txt-tr {
+    color: var(--cor-accent);
+    display: flex;
+    align-items: last baseline;
+    justify-content: space-between;
+}
+
+.txt-tr h2 {
+    font-size: 2rem;
+}
+
+.txt-tr span {
+    color: var(--cor-logo);
+}
+
+.txt-tr p {
+    font-size: 0.7rem;
+}
+
+.programa-tr article {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.programa-tr article .iniciante {
+    background-color: var(--cor-button-txt);
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 292px;
+}
+
+.programa-tr article .avancado {
+    background-color: #ADAAAA;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    height: 292px;
+}
+
+.programa-tr article .infantil {    
+    grid-column: 1/3;
+    grid-row: 2/3;
+    height: 292px;
+}
+
+
+.programa-tr article .infantil img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.programa-tr article .competicao {
+    background-color: #A4FFB9;
+    grid-column: 3/4;
+    grid-row: 1/3;
+    height: 584px;
 }
