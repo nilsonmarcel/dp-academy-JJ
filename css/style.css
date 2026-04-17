@@ -29,7 +29,8 @@ body {
     background-color: var(--cor-primary-body);
 }
 
-.inteface-menu {
+.inteface-menu,
+.menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,6 +40,7 @@ body {
 .logo p {
     font-family: "Comfortaa", sans-serif !important;
     font-size: 1.3rem;
+    white-space: nowrap;
 }
 
 .logo span {
@@ -73,21 +75,27 @@ header.inteface-menu {
     align-items: center;
 }
 
-header nav.menu ul {
+header .menu ul {
     display: flex;
     align-items: center;
-    list-style-type: none;
-    gap: 56px;
+    list-style: none;
+    gap: 36px;
 }
 
-header nav.menu a {
+header .menu ul li a {
     color: var(--cor-style);
     text-decoration: none;
     font-size: 1rem;
 }
 
-header nav.menu a:hover {
+header .menu ul li a:hover {
     color: var(--cor-accent);
+}
+
+/* Estilo Menu Mobile */
+
+.menu-mobile {
+    display: none;
 }
 
 /* ----------------  Estilo hero ----------------  */
@@ -171,29 +179,40 @@ section.hero::before {
 
 .about .interface-about {
     position: relative;
-    padding-top: 30px;
-    padding-left: 30px;
+    padding-top: 20px;
+    padding-left: 20px;
 }
-
-.about .interface-about::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100px;
-    height: 100px;
-    border-left: 3px solid var(--cor-logo);
-    border-top: 3px solid var(--cor-logo);
-}
-
 
 .img-about {
     position: relative;
 }
 
+.img-about::before,
+.img-about::after {
+    content: '';
+    position: absolute;
+    background-color: var(--cor-logo);
+}
+
+.img-about::before {
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 15%;
+}
+
+.img-about::after {
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 20%;
+
+}
+
 .img-about img {
     width: 450px;
     height: 450px;
+    padding: 20px;
 }
 
 .mestre {
@@ -217,7 +236,7 @@ section.hero::before {
 
 .txt-about {
     align-items: center;
-    padding: 30px 60px 120px;
+    padding: 30px 60px 60px;
 
 }
 
@@ -229,7 +248,7 @@ section.hero::before {
 .txt-about p {
     font-size: 1rem;
     color: var(--cor-style-p);
-    margin: 40px 0 46px 0;
+    margin: 30px 0 26px 0;
 
 }
 
@@ -242,7 +261,6 @@ section.hero::before {
     padding-left: 16px;
     font-size: 0.8rem;
     margin: 0 0 20px 0;
-    line-height: 25px;
 }
 
 .txt-about .border span {
@@ -253,11 +271,12 @@ section.hero::before {
 
 .Metodoligia {
     background-color: var(--cor-primary-body);
-    padding: 80px 28px 50px 40px;
+    padding: 80px 40px;
 }
 
 .interface-meto {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 60px;
 }
@@ -289,7 +308,7 @@ section.hero::before {
 .medalhas {
     background-color: var(--cor-about);
     font-size: 0.8rem;
-    padding: 40px 60px 50px 40px;
+    padding: 40px;
     color: var(--cor-accent);
 }
 
@@ -423,6 +442,27 @@ section.hero::before {
 .depoimentos {
     background-color: var(--cor-about);
     padding: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.depoimentos .txt-fundo p {
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    font-family: "Comfortaa", sans-serif !important;
+    color: rgba(255, 255, 255, 0.05);
+    font-size: 200px;
+    position: absolute;
+    inset: 0;
+    font-weight: bolder;
+    opacity: 0.4;
+    z-index: 0;
+}
+
+.depoimentos .interface-depoimento {
+    position: relative;
+    z-index: 1;
 }
 
 .txt-depoimentos h2 {
@@ -451,8 +491,8 @@ section.hero::before {
 
 .box-depoimentos .box {
     background-color: var(--cor-primary-body);
-    width: 250px;
-    height: 220px;
+    width: 280px;
+    height: 200px;
     padding: 20px;
 
 }
@@ -481,7 +521,7 @@ section .interface-cta {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgba(255,255,255,0.15);
+    color: rgba(255, 255, 255, 0.15);
     font-size: 30rem;
     transform: rotate(12deg);
     font-weight: 600;
@@ -503,7 +543,7 @@ section .interface-cta {
 }
 
 .final-cta article h2 {
-    font-size: 3.2rem;    
+    font-size: 3.2rem;
     color: var(--cor-master-txt);
     margin-bottom: 30px;
 }
@@ -512,8 +552,8 @@ section .interface-cta {
     font-size: 1.2rem;
     font-weight: bolder;
     text-align: center;
-    color: var(--cor-master-txt);  
-    margin-bottom: 60px; 
+    color: var(--cor-master-txt);
+    margin-bottom: 60px;
 }
 
 .button-cta {
@@ -523,8 +563,9 @@ section .interface-cta {
     text-decoration: none;
     transition: .5s;
 }
-.button-cta:hover {  
-    font-size: 1.3rem; 
+
+.button-cta:hover {
+    font-size: 1.3rem;
     opacity: .9;
     font-weight: bolder;
     box-shadow: -1px 8px 25px var(--cor-master-txt);
@@ -545,7 +586,7 @@ footer .interface-footer h3 {
     padding: 70px;
 }
 
-footer .interface-footer a {    
+footer .interface-footer a {
     color: var(--cor-accent);
     text-decoration: none;
 }
@@ -562,4 +603,3 @@ footer .interface-footer a:hover {
     align-items: center;
     padding: 40px 40px;
 }
-

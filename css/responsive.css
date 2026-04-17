@@ -1,0 +1,231 @@
+@media (max-width: 970px) {
+
+    .logo p {
+        font-size: 1rem;
+    }
+
+    /* Estilo Menu */
+    .menu {
+        display: none;
+    }
+
+    .inteface-menu {
+        flex-direction: row;
+    }
+
+    .logo {
+        order: 1;
+    }
+
+    .menu-mobile {
+        display: block;
+        order: 0;
+    }
+
+    .inteface-menu>div:has(.button) {
+        order: 3;
+    }
+
+    header nav.menu-mobile ul {
+        list-style-type: none;
+    }
+
+    header nav.menu ul li a {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        gap: 36px;
+    }
+
+    .button {
+        padding: 7px 30px;
+        border-radius: 6px;
+    }
+
+    /* Estilo Hero */
+
+    .txt-hero p {
+        border-left: 2px solid var(--cor-logo);
+        font-size: 1rem;
+        color: var(--cor-style-p);
+        margin: 70px 0 70px 0;
+        padding-left: 15px;
+    }
+
+    /* Estilo About */
+    .about>.interface-about {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .about {
+        padding: 10px 0;
+    }
+
+    .img-about img {
+        width: 330px;
+        height: 330px;
+        padding: 25px;
+    }
+
+    .mestre {
+        position: absolute;
+        bottom: 0;
+        left: 65px;
+        top: 40px;
+        transform: translate(0%, -90%);
+        background-color: var(--cor-master);
+        color: var(--cor-master-txt);
+        font-weight: bolder;
+        font-size: 1.8rem;
+        position: relative;
+        z-index: 3;
+        width: 200px;
+        height: 104px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .txt-about {
+        align-items: center;
+        padding: 10px 30px 30px;
+
+    }
+
+
+    .txt-about .border {
+        padding: 10px;
+    }
+
+    .txt-about .border p {
+        border-left: 2px solid var(--cor-logo);
+        padding-left: 16px;
+        font-size: 0.8rem;
+        margin: 0 0 20px 0;
+    }
+
+    /* ----------------  Metodologia ----------------  */
+    .Metodoligia {
+        background-color: var(--cor-primary-body);
+        padding: 40px 10px;
+    }
+
+    .interface-meto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Metodoligia .card-meto {
+        width: 300px;
+        height: 188px;
+
+    }
+
+    /* ----------------  Estilo programa de treinamento ----------------  */
+    .programa-tr {
+        padding: 20px;
+    }
+
+    .programa-tr article {
+        grid-template-columns: 1fr;
+        grid-template-rows: unset;
+    }
+
+    .programa-tr article #iniciante,
+    .programa-tr article #avancado,
+    .programa-tr article #infantil,
+    .programa-tr article #competicao {
+        grid-column: unset;
+        grid-row: unset;
+        height: 250px;
+        box-shadow: none;
+    }
+
+    /* ----------------  Estilo depoimentos ----------------  */
+    .depoimentos {
+        background-color: var(--cor-about);
+        padding: 10px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .box-depoimentos .box {
+        background-color: var(--cor-primary-body);
+        width: 280px;
+        height: 200px;
+        padding: 20px;
+
+    }
+
+
+    /* ----------------  Estilo Depoimentos ----------------  */
+    .depoimentos .box-depoimentos {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    /* ---------------- Estilo CTA ----------------  */
+    section .interface-cta {
+    height: 700px;
+}
+
+.final-cta article {
+    padding: 10px;
+}
+
+.button-cta {
+    background: var(--cor-primary-body);
+    color: var(--cor-accent);
+    padding: 30px 110px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.button-cta:hover {
+    font-size: 1.3rem;
+    opacity: .9;
+    font-weight: bolder;
+    box-shadow: -1px 8px 25px var(--cor-master-txt);
+}
+
+/* ---------------- Estilo Footer ---------------- */
+
+footer {
+    background-color: var(--cor-about);
+    height: 550px;
+}
+
+footer .interface-footer h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    padding: 70px;
+}
+
+footer .interface-footer a {
+    color: var(--cor-accent);
+    text-decoration: none;
+}
+
+footer .interface-footer a:hover {
+    color: var(--cor-logo);
+    opacity: .9;
+}
+
+.interface-footer .direitos {
+    display: flex;
+    justify-content: center;
+    color: var(--cor-style-p);
+    align-items: center;
+    padding: 40px 40px;
+}
+
+
+}
