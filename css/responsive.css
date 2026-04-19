@@ -69,22 +69,11 @@
     }
 
     .mestre {
-        position: absolute;
-        bottom: 0;
-        left: 65px;
-        top: 40px;
-        transform: translate(0%, -90%);
-        background-color: var(--cor-master);
-        color: var(--cor-master-txt);
-        font-weight: bolder;
+        left: 75px;
+        top: 20px;
         font-size: 1.8rem;
-        position: relative;
-        z-index: 3;
-        width: 200px;
-        height: 104px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        width: 180px;
+        height: 84px;
     }
 
     .txt-about {
@@ -152,21 +141,12 @@
         overflow: hidden;
     }
 
-    .box-depoimentos .box {
-        background-color: var(--cor-primary-body);
-        width: 280px;
-        height: 200px;
-        padding: 20px;
-
-    }
-
-
-    /* ----------------  Estilo Depoimentos ----------------  */
+     /* ----------------  Estilo Depoimentos ----------------  */
     .depoimentos .box-depoimentos {
         display: flex;
         flex-direction: column;
         gap: 10px;
-        margin-top: 20px;
+        margin: 20px;
     }
 
     /* ---------------- Estilo CTA ----------------  */
@@ -198,15 +178,19 @@
 
 footer {
     background-color: var(--cor-about);
-    height: 550px;
+    height: 650px;
 }
 
-footer .interface-footer h3 {
+footer .interface-footer {
+    padding: 60px;
+}
+
+footer .interface-footer .txt-footer .txt-footer-mobile h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2.5rem;
-    padding: 70px;
+    font-size: 1.8rem;
+    
 }
 
 footer .interface-footer a {
@@ -214,18 +198,10 @@ footer .interface-footer a {
     text-decoration: none;
 }
 
-footer .interface-footer a:hover {
-    color: var(--cor-logo);
-    opacity: .9;
+footer .interface-footer .txt-footer h3 {
+     display: none;
 }
 
-.interface-footer .direitos {
-    display: flex;
-    justify-content: center;
-    color: var(--cor-style-p);
-    align-items: center;
-    padding: 40px 40px;
-}
 
 
 }
