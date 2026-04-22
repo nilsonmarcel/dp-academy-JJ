@@ -10,21 +10,14 @@
     }
 
     .inteface-menu {
-        flex-direction: row;
+        display: flex;
     }
 
-    .logo {
-        order: 1;
-    }
-
-    .menu-mobile {
-        display: block;
-        order: 0;
-    }
-
-    .inteface-menu>div:has(.button) {
-        order: 3;
-    }
+    .menu-list {
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
 
     header nav.menu-mobile ul {
         list-style-type: none;
@@ -40,6 +33,11 @@
     .button {
         padding: 7px 30px;
         border-radius: 6px;
+    }
+
+    .btn-menu-mobile, 
+    .menu-mobile {
+        display: block;
     }
 
     /* Estilo Hero */
@@ -141,7 +139,7 @@
         overflow: hidden;
     }
 
-     /* ----------------  Estilo Depoimentos ----------------  */
+    /* ----------------  Estilo Depoimentos ----------------  */
     .depoimentos .box-depoimentos {
         display: flex;
         flex-direction: column;
@@ -151,56 +149,56 @@
 
     /* ---------------- Estilo CTA ----------------  */
     section .interface-cta {
-    height: 700px;
-}
+        height: 700px;
+    }
 
-.final-cta article {
-    padding: 10px;
-}
+    .final-cta article {
+        padding: 10px;
+    }
 
-.button-cta {
-    background: var(--cor-primary-body);
-    color: var(--cor-accent);
-    padding: 30px 110px;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: .5s;
-}
+    .button-cta {
+        background: var(--cor-primary-body);
+        color: var(--cor-accent);
+        padding: 30px 110px;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: .5s;
+    }
 
-.button-cta:hover {
-    font-size: 1.3rem;
-    opacity: .9;
-    font-weight: bolder;
-    box-shadow: -1px 8px 25px var(--cor-master-txt);
-}
+    .button-cta:hover {
+        font-size: 1.3rem;
+        opacity: .9;
+        font-weight: bolder;
+        box-shadow: -1px 8px 25px var(--cor-master-txt);
+    }
 
-/* ---------------- Estilo Footer ---------------- */
+    /* ---------------- Estilo Footer ---------------- */
 
-footer {
-    background-color: var(--cor-about);
-    height: 650px;
-}
+    footer {
+        background-color: var(--cor-about);
+        height: 650px;
+    }
 
-footer .interface-footer {
-    padding: 60px;
-}
+    footer .interface-footer {
+        padding: 60px;
+    }
 
-footer .interface-footer .txt-footer .txt-footer-mobile h3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.8rem;
-    
-}
+    footer .interface-footer .txt-footer .txt-footer-mobile h3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.8rem;
 
-footer .interface-footer a {
-    color: var(--cor-accent);
-    text-decoration: none;
-}
+    }
 
-footer .interface-footer .txt-footer h3 {
-     display: none;
-}
+    footer .interface-footer a {
+        color: var(--cor-accent);
+        text-decoration: none;
+    }
+
+    footer .interface-footer .txt-footer h3 {
+        display: none;
+    }
 
 
 
