@@ -25,6 +25,10 @@
     --cor-master-txt: #004621;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--cor-primary-body);
 }
@@ -53,7 +57,7 @@ body {
     color: var(--cor-logo);
     letter-spacing: -4px;
     font-family: "Comfortaa", sans-serif !important;
-    font-size: 2.2rem;
+    font-size: 2rem;
 }
 
 header {
@@ -64,7 +68,7 @@ header {
 .button {
     background: var(--cor-button);
     color: var(--cor-button-txt);
-    padding: 10px 50px;
+    padding: 10px 40px;
     text-decoration: none;
     transition: .5s;
 }
@@ -219,6 +223,7 @@ section.hero::before {
 
 .txt-hero .button {
     box-shadow: -1px 4px 11px var(--cor-button-txt);
+    font-size: 0.9rem;
 }
 
 /* ----------------  Estilo about ----------------  */
@@ -598,24 +603,29 @@ section .interface-cta {
     z-index: 2;
 }
 
+.final-cta article span {
+    color: var(--cor-accent);
+}
+
 .final-cta article h2 {
-    font-size: 3.2rem;
+    font-size: 3rem;
     color: var(--cor-master-txt);
     margin-bottom: 30px;
 }
 
 .final-cta article p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: bolder;
     text-align: center;
     color: var(--cor-master-txt);
     margin-bottom: 60px;
+    text-shadow: 2px 2px 2px var(--cor-logo);
 }
 
 .button-cta {
     background: var(--cor-primary-body);
     color: var(--cor-accent);
-    padding: 30px 60px;
+    padding: 30px 50px;
     text-decoration: none;
     transition: .5s;
 }
@@ -637,7 +647,7 @@ footer {
 footer .interface-footer .txt-footer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     color: var(--cor-style-p);
     font-size: 0.8rem;
@@ -645,7 +655,7 @@ footer .interface-footer .txt-footer {
 
 footer .interface-footer .txt-footer h3 {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     font-size: 3rem;
     padding: 40px;
@@ -682,14 +692,62 @@ footer .interface-footer a:hover {
     display: none;
 }
 
-footer .interface-footer .box-maps {
+footer .interface-footer .btn-box-maps {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    color: var(--cor-accent);
+    font-size: 1.5rem;
     margin-top: 20px;
     margin-bottom: 80px;
+    cursor: pointer;
 }
+
+footer .interface-footer .btn-box-maps:hover {
+    font-size: 2.5rem;
+    opacity: .9;
+}
+
+/* Estilo footer maps */
+
+.btn-box-maps i {
+    font-size: 1.8rem;
+    color: var(--cor-primary);
+}
+
+.btn-box-maps span {
+    color: var(--cor-accent);
+}
+
+.box-maps .bi-x-lg {
+    font-size: 2rem;
+    color: var(--cor-logo);
+    padding: 24px;
+}
+
+.box-maps {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100vw;
+    height: 100%;
+    background-color: var(--cor-primary-body);
+    opacity: 0.95;
+    text-align: center;
+    padding: 32px 0;
+    z-index: 999;
+    pointer-events: none;
+}
+
+.box-maps.open-maps {
+    display: block;
+    left: 0;
+    pointer-events: initial;
+    transition: .8s;
+}
+
+/* fim footer maps */
 
 .interface-footer .direitos {
     display: flex;
