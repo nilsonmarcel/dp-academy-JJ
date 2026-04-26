@@ -23,6 +23,7 @@
     --cor-about: #131313;
     --cor-master: #A4FFB9;
     --cor-master-txt: #004621;
+    --cor-card: #262626;
 }
 
 html {
@@ -104,28 +105,28 @@ header .menu ul li a:hover {
 
 /* Estilo Menu Mobile */
 
-.menu-mobile ul{
-    list-style: none; 
-    padding: 64px 0;   
-  }
+.menu-mobile ul {
+    list-style: none;
+    padding: 64px 0;
+}
 
-  .menu-mobile ul li a {
+.menu-mobile ul li a {
     color: var(--cor-logo);
     font-size: 1.4rem;
     text-decoration: none;
     padding: 24px;
     display: block;
     transition: .2s;
-  }
+}
 
-  .menu-mobile ul li a:hover {
+.menu-mobile ul li a:hover {
     background-color: var(--cor-logo);
     color: var(--cor-neutral);
-  }
+}
 
-  .btn-menu-mobile {
+.btn-menu-mobile {
     display: none;
-  }
+}
 
 .btn-menu-mobile i {
     font-size: 2.8rem;
@@ -364,28 +365,176 @@ section.hero::before {
     font-size: 0.8rem;
 }
 
-/* ----------------  Estilo Medalhas ----------------  */
+/* ----------------  Estilo Horário ----------------  */
 
-.medalhas {
+.schedules {
+    width: 100%;
+    height: 100vh;
+}
+
+.interface-schedules {
+    height: 100vh;
+    margin-top: 10px;
     background-color: var(--cor-about);
-    font-size: 0.8rem;
-    padding: 40px;
+}
+
+.schedules-txt {
+    height: 130px;
+    padding: 40px 0;
+    background-color: var(--cor-neutral);
     color: var(--cor-accent);
 }
 
-.medalhas article {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.medalhas span {
-    font-weight: 600;
+.schedules-txt h2 {
     font-size: 2rem;
+    padding-left: 20px;
 }
 
-.box-green span {
+.schedules-txt h2 span {
     color: var(--cor-logo);
+}
+
+.grid-schedule {
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+
+}
+
+.grid-schedule h4 {
+    color: var(--cor-accent);
+}
+
+.grid-schedule h5 {
+    color: var(--cor-logo);
+}
+
+.grid-schedule p {
+    color: var(--cor-style-p);
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+.grid-schedule p span {
+    font-size: 1.1rem;
+}
+
+.schedule-info {
+    display: grid;
+    background-color: var(--cor-about);
+    flex: 1;
+}
+
+.info-adult .card-check {    
+    padding: 20px 40px 0 0;
+}
+
+.card-check i {
+    color: var(--cor-logo);
+}
+
+.card-check p {
+    text-align: left;
+}
+
+.info-infantil h4 {
+    color: var(--cor-logo);
+    padding: 20px 0;
+}
+
+.info-infantil p {
+    text-align: left;
+}
+
+.cards-infantil {
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    gap: 10px;
+}
+
+.cards-infantil span {
+    font-size: 0.6rem;   
+    color: var(--cor-style-p);
+}
+
+.card-little,
+.card-kids {
+    flex: 1;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--cor-card);
+}
+ 
+.card-cta {
+    display: grid;
+    justify-content: center;
+    height: 100px;
+    background-color: var(--cor-tertiary);
+    padding: 8px;
+    margin: 5px;
+    gap: 8px;
+}
+
+.card-left {
+    display: grid;
+    flex: 1;
+    gap: 10px;
+}
+
+.card-left p {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.card-left h4,
+.card-right h4 {
+    padding-left: 10px;
+}
+
+.card-adult-night {
+    background-color: var(--cor-card);
+}
+
+.card-adul {
+    background-color: var(--cor-card);
+}
+
+.card-adult-nogi {
+    background-color: var(--cor-card);
+}
+
+.card-right {
+    display: grid;
+    flex: 1;
+    gap: 10px;
+}
+
+.card-right p {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.kids-card {
+    background-color: var(--cor-tertiary);
+}
+
+.saturday-card {
+    background-color: var(--cor-logo);
+}
+
+
+.saturday-card h4 {
+    padding-left: 10px;
+    color: var(--cor-button-txt);
+}
+
+.saturday-card p {
+    color: var(--cor-master-txt);
 }
 
 /* ----------------  Estilo programa de treinamento ----------------  */
@@ -647,16 +796,13 @@ footer {
 footer .interface-footer .txt-footer {
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     color: var(--cor-style-p);
     font-size: 0.8rem;
 }
 
 footer .interface-footer .txt-footer h3 {
-    display: flex;
-    justify-content: left;
-    align-items: center;
     font-size: 3rem;
     padding: 40px;
 }
@@ -698,8 +844,7 @@ footer .interface-footer .btn-box-maps {
     align-items: center;
     color: var(--cor-accent);
     font-size: 1.5rem;
-    margin-top: 20px;
-    margin-bottom: 80px;
+    margin: 20px auto 80px;
     cursor: pointer;
 }
 
@@ -710,12 +855,24 @@ footer .interface-footer .btn-box-maps:hover {
 
 /* Estilo footer maps */
 
+.btn-box-maps {
+    background: var(--cor-button);
+    max-width: 520px;
+    border-radius: 4px;
+    box-shadow: -1px 4px 11px var(--cor-button-txt);
+    padding: 2px;
+}
+
 .btn-box-maps i {
     font-size: 1.8rem;
     color: var(--cor-primary);
 }
 
 .btn-box-maps span {
+    color: var(--cor-button-txt);
+}
+
+.btn-box-maps span:hover {
     color: var(--cor-accent);
 }
 
