@@ -332,6 +332,7 @@ section.hero::before {
 /* ----------------  Estilo Metodologia ----------------  */
 
 .Metodoligia {
+    height: 100vh;
     background-color: var(--cor-primary-body);
     padding: 80px 40px;
 }
@@ -367,20 +368,15 @@ section.hero::before {
 
 /* ----------------  Estilo Horário ----------------  */
 
-.schedules {
-    width: 100%;
-    height: 100vh;
-}
 
 .interface-schedules {
-    height: 100vh;
     margin-top: 10px;
     background-color: var(--cor-about);
 }
 
 .schedules-txt {
     height: 130px;
-    padding: 40px 0;
+    padding: 20px 20px;
     background-color: var(--cor-neutral);
     color: var(--cor-accent);
 }
@@ -396,9 +392,8 @@ section.hero::before {
 
 .grid-schedule {
     display: flex;
-    padding: 20px;
-    gap: 10px;
-
+    padding: 40px 25px;
+    gap: 20px;
 }
 
 .grid-schedule h4 {
@@ -412,7 +407,7 @@ section.hero::before {
 .grid-schedule p {
     color: var(--cor-style-p);
     text-align: center;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 
 .grid-schedule p span {
@@ -425,8 +420,19 @@ section.hero::before {
     flex: 1;
 }
 
-.info-adult .card-check {    
-    padding: 20px 40px 0 0;
+.info-adult {
+    padding: 10px;
+    flex: 1;
+}
+
+.info-adult .card-check {  
+    padding: 20px 0;
+}
+
+.card-check li {
+    display: flex;
+    gap: 8px;
+    padding: 10px;
 }
 
 .card-check i {
@@ -451,6 +457,7 @@ section.hero::before {
     justify-content: center;
     padding: 8px;
     gap: 10px;
+    
 }
 
 .cards-infantil span {
@@ -461,6 +468,7 @@ section.hero::before {
 .card-little,
 .card-kids {
     flex: 1;
+    font-size: 1.3rem;
     text-align: center;
     margin-top: 20px;
     padding: 10px;
@@ -471,7 +479,7 @@ section.hero::before {
 .card-cta {
     display: grid;
     justify-content: center;
-    height: 100px;
+    height: 130px;
     background-color: var(--cor-tertiary);
     padding: 8px;
     margin: 5px;
@@ -497,14 +505,17 @@ section.hero::before {
 
 .card-adult-night {
     background-color: var(--cor-card);
+    padding: 20px;
 }
 
-.card-adul {
+.card-adult {
     background-color: var(--cor-card);
+    padding: 20px;
 }
 
 .card-adult-nogi {
     background-color: var(--cor-card);
+    padding: 20px;
 }
 
 .card-right {
@@ -521,10 +532,14 @@ section.hero::before {
 
 .kids-card {
     background-color: var(--cor-tertiary);
+    border: 1px solid var(--cor-master-txt);
+    padding: 20px;
+
 }
 
 .saturday-card {
     background-color: var(--cor-logo);
+    padding: 20px;
 }
 
 
@@ -541,7 +556,7 @@ section.hero::before {
 
 .programa-tr {
     background-color: var(--cor-primary-body);
-    padding: 60px;
+    padding: 30px 40px;
 }
 
 .txt-tr {
@@ -651,7 +666,7 @@ section.hero::before {
 
 .depoimentos {
     background-color: var(--cor-about);
-    padding: 50px;
+    padding: 30px 0;
     position: relative;
     overflow: hidden;
 }
@@ -673,6 +688,7 @@ section.hero::before {
 .depoimentos .interface-depoimento {
     position: relative;
     z-index: 1;
+    padding: 0 40px;
 }
 
 .txt-depoimentos h2 {
@@ -868,6 +884,11 @@ footer .interface-footer .btn-box-maps:hover {
     color: var(--cor-primary);
 }
 
+.btn-box-maps i:hover {
+    color: var(--cor-accent);
+    opacity: .9;
+}
+
 .btn-box-maps span {
     color: var(--cor-button-txt);
 }
@@ -906,11 +927,17 @@ footer .interface-footer .btn-box-maps:hover {
 
 /* fim footer maps */
 
+.interface-footer hr {
+    border: none;
+    border-top: 1px solid var(--cor-card);
+    margin: 16px 0;
+}
+
 .interface-footer .direitos {
     display: flex;
     justify-content: center;
     text-align: center;
     color: var(--cor-style-p);
     align-items: center;
-    padding-top: 80px;
+    padding: 30px 0;
 }
