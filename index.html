@@ -10,6 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <title>dp Academy</title>
@@ -27,8 +28,8 @@
                 </div>
 
                 <nav class="menu">
-                    <ul>
-                        <li><a href="#home">Home</a></li>
+                    <ul class="nav nav-segment nav-pills">
+                        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
                         <li><a href="#about">Sobre</a></li>
                         <li><a href="#methodology">Metodologia</a></li>
                         <li><a href="#schedules">Horários</a></li>
@@ -71,12 +72,12 @@
                 </div>
 
                 <div class="txt-hero">
-                    <h1>FORJANDO <SPan>CAMPEÕES</SPan> <br> DENTRO E FORA <br> DO TATAME</h1>
-                    <p>Domine a arte suave através de uma metodologia de elite. <br>
+                    <h1 class="title">FORJANDO <SPan>CAMPEÕES</SPan> <br> DENTRO E FORA <br> DO TATAME</h1>
+                    <p class="description">Domine a arte suave através de uma metodologia de elite. <br>
                         Disciplina inabalável, técnica de precisão e uma <br>
                         comunidade focada na evolução constante.</p>
 
-                    <div><a class="button" href="https://wa.me/5511957652882" target="_blank"
+                    <div class="buttons"><a class="button" href="https://wa.me/5511957652882" target="_blank"
                             rel="noopener noreferrer">AGENDAR AULA EXPERIMENTAL</a></div>
                 </div>
 
@@ -94,15 +95,26 @@
                 </div>
 
                 <div class="txt-about">
-                    <h2>NOSSA HISTÓRIA</h2>
-                    <p>A dp Academy JJ nasceu da visão de criar um ambiente onde a
-                        excelência técnica se encontra com o desenvolvimeto humano. Não
-                        somos apenas uma academia, somos um laboratório de performance.
+                    <h2 data-aos="zoom-out-left" data-aos-delay="400">NOSSA HISTÓRIA</h2>
+                    <p>Comecei minha jornada na arte suave em 2010, como faixa branca. Desde o primeiro tatame, o
+                        jiu-jitsu virou parte de quem eu sou.
+                        <br>
+                        <br>
+                        Entre 2010 e 2014, conciliei uma rotina intensa de trabalho com treinos diários. Foram anos de
+                        disciplina, ralação e aprendizado. Cada queda, cada raspagem e cada finalização me trouxe até
+                        2014, ano em que conquistei a faixa preta.
+                        <br>
+                        <br>
+                        Junto com a faixa preta, nasceu a <strong>DP Academy.</strong> Um projeto que carrega tudo que
+                        aprendi no
+                        caminho: respeito, superação e a certeza de que o jiu-jitsu transforma vidas dentro e fora do
+                        tatame.
+                        Hoje meu propósito é formar não só atletas, mas pessoas mais fortes e confiantes. Seja bem-vindo
+                        à família DP Academy.
                     </p>
                     <div class="border">
-                        <P><span>DISCIPLINA</span> <br> <br> O alicerce de todo grande lutador. Sem atalhos,
-                            apenas trabalho
-                            duro.</P>
+                        <P><span>DISCIPLINA</span> <br> <br> No jiu-jitsu nao se mede em medalhas, mas em quantas vezes
+                            você voltou para o tatame depois de querer desistir.</P>
                         <p><span>RESPEITO</span> <br> <br> Honramos o tatame, os professores e cada parceiro
                             de treino.</p>
                         <p><span>EVOLUÇÃO</span> <br> <br> Busca incessante pelo 1% melhor a cada dia de
@@ -139,7 +151,7 @@
         <section class="schedules" id="schedules">
             <div class="interface-schedules">
                 <div class="schedules-txt">
-                    <h2>QUADROS DE <br><span>HORÁRIOS</span></h2>
+                    <h2 data-aos="zoom-out-left" data-aos-delay="400">QUADROS DE <br><span>HORÁRIOS</span></h2>
                 </div>
                 <article>
                     <div class="grid-schedule">
@@ -160,9 +172,9 @@
                                     <li>
                                         <span><i class="bi bi-check-circle"></i></span>
                                         <span>
-                                            <p>Ambiente profissional com tatames
-                                                olímpicos e higienização hospitalar
-                                                constante.</p>
+                                            <p>Ambiente profissional, tatame totalmente reformado pensado no conforto,
+                                                na segurança e no respeito à cada aluno que pisa aqui.
+                                            </p>
                                         </span>
                                     </li>
                                 </ul>
@@ -177,7 +189,7 @@
                                     técnicas para pequenos campeões.</p>
                                 <div class="cards-infantil">
                                     <div class="card-little">
-                                        <h5>4-10 <br><span>ANOS</span></h5>
+                                        <h5>3-10 <br><span>ANOS</span></h5>
                                     </div>
                                     <div class="card-kids">
                                         <h5>11-14 <br><span>ANOS</span></h5>
@@ -190,35 +202,36 @@
 
                         <div class="card-left">
                             <div class="card-adult-night">
-                                <h4>ADULTO <br>SEG. e QUAR.</h4>
-                                <p>NOITE <SPan>19:00 </SPan></p>
+                                <h4>ADULTO</h4>
+                                <p>MANHÃ </p>
+                                <p>Ter e Qui<SPan>10:30 </SPan></p>
+                                <p>Sab<SPan>9:00 </SPan></p>
                             </div>
 
                             <div class="card-adult">
-                                <h4>TER. E QUIN.</h4>
-                                <p>MANHÃ <SPan>10:00</SPan></p>
-                                <p>TARDE <SPan>17:00</SPan></p>
-                                <p>NOITE <SPan>19:30</SPan></p>
+                                <p>TARDE</p>
+                                <p>Seg, Ter e Sexta <SPan>10:00</SPan>NO GI</p>
+                                <p>Ter e Qui <SPan>17:00</SPan>com kimono</p>
                             </div>
 
                             <div class="card-adult-nogi">
-                                <h4>SEX.</h4>
-                                <p>TARDE <SPan>17:00</SPan> NO GI</p>
+                                <p>NOITE</P>
+                                <p>Seg <SPan>19:00</SPan> Iniciantes</p>
+                                <p>Ter e Qui <SPan>19:30</SPan> Iniciantes</p>
                             </div>
                         </div>
 
                         <div class="card-right">
                             <div class="kids-card">
-                                <h4>INFANTIL</h4>
-                                <p>MANHÃ <SPan>10:00</SPan>TER. E QUIN.</p>
-                                <p>NOITE <SPan>18:00</SPan>TER. E QUIN.</p>
+                                <h4>TURMAS</h4>
+                                <p><span>BABY</span> Seg. e Qua.<SPan>18:00</SPan></p>
+                                <p><span>KIDS</span> Ter. e Qui. <SPan>18:30</SPan></p>
+                                <p><span>KIDS COMPETITIVO</span> Sab. <SPan>11:00</SPan></p>
                             </div>
 
                             <div class="saturday-card">
-                                <h4>SAB.</h4>
-                                <p>MANHÃ <SPan>09:00</SPan>ADULTO</p>
-                                <p>MANHÃ <SPan>10:00</SPan>ESPECIAL</p>
-                                <p>MANHÃ <SPan>11:00</SPan>KIDS</p>
+                                <h4>FEMININO</h4>                                
+                                <p>Quarta <SPan>19:00</SPan></p>                                
                             </div>
 
                             <div class="card-cta">
@@ -235,7 +248,7 @@
         <section class="programa-tr" id="highlights">
             <div class="interface-tr">
                 <div class="txt-tr">
-                    <h2>PROGRAMA DE <br> <span>TREINAMENTO</span></h2>
+                    <h2 data-aos="zoom-out-left" data-aos-delay="400">PROGRAMA DE <br> <span>TREINAMENTO</span></h2>
                     <P>TODOS OS NÍVEIS <br> TODAS AS IDADES</P>
                 </div>
 
@@ -275,7 +288,7 @@
             </div>
             <div class="interface-depoimento">
                 <div class="txt-depoimentos">
-                    <h2>VOZES DO <br><span>TATAME</span></h2>
+                    <h2 data-aos="zoom-out-left" data-aos-delay="400">VOZES DO <br><span>TATAME</span></h2>
                 </div>
                 <div class="box-depoimentos">
 
@@ -342,7 +355,7 @@
                     <p>BJJ</p>
                 </div>
                 <article>
-                    <h2><span>PRONTO PARA O PRÓXIMO</span> <br> NÍVEL?</h2>
+                    <h2 data-aos="flip-down" data-aos-delay="300"><span>PRONTO PARA O PRÓXIMO</span> <br> NÍVEL?</h2>
                     <P>Sua jornada começa aqui. Transforme seu corpo e sua mente no tatame mais respeitado da <br>
                         cidade.</P>
 
@@ -354,16 +367,18 @@
         </section>
     </main>
 
+    <a class="back-to-top" onclick="scrollToTop()"><i class="bi bi-arrow-up-square-fill"></i></a>
+
     <footer>
         <div class="interface-footer" id="contact">
             <div class="txt-footer">
                 <a href="#home">
-                    <h3>DP ACADEMY JIU-JITSU</h3>
+                    <h3 data-aos="fade-down" data-aos-delay="400">DP ACADEMY JIU-JITSU</h3>
                 </a>
 
                 <div class="txt-footer-mobile">
                     <a href="#home">
-                        <h3>DP ACADEMY JJ</h3>
+                        <h3 data-aos="zoom-out-left" data-aos-delay="400">DP ACADEMY JJ</h3>
                     </a>
                 </div>
 
@@ -393,13 +408,16 @@
             <hr>
 
             <div class="direitos">
-                <p>&copy; 2026 Dp Academy Jiu-Jitsu. Todos os direitos reservados. <br> Cref 200757-G/SP</p>
+                <p>&copy; 2026 <strong>DP Academy</strong> Jiu-Jitsu. Todos os direitos reservados. <br> Cref
+                    200757-G/SP</p>
 
             </div>
         </div>
     </footer>
 
     <script src="js/mobile.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 
 

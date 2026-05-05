@@ -65,8 +65,8 @@
     }
 
     .img-about img {
-        width: 330px;
-        height: 330px;
+        width: 360px;
+        height: 360px;
         padding: 25px;
     }
 
@@ -116,6 +116,10 @@
     }
 
     /*----------------  Estilo Schedules ---------------- */
+
+    .interface-schedules {
+    margin-top: 50px;
+}
 
     .grid-schedule {
     display: grid;
@@ -184,7 +188,6 @@
         overflow: hidden;
     }
 
-    /* ----------------  Estilo Depoimentos ----------------  */
     .depoimentos .box-depoimentos {
         display: flex;
         flex-direction: column;
@@ -216,6 +219,12 @@
         font-weight: bolder;
         box-shadow: -1px 8px 25px var(--cor-master-txt);
     }
+
+    /* ---------------- Estilo voltar ao topo ---------------- */
+    
+    .back-to-top {
+    display: none;
+}
 
     /* ---------------- Estilo Footer ---------------- */
 

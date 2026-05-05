@@ -227,6 +227,35 @@ section.hero::before {
     font-size: 0.9rem;
 }
 
+.hero .txt-hero .title,
+.hero .txt-hero .description,
+.hero .txt-hero .buttons {
+    opacity: 0;
+    filter: blur();
+    transform: translateY(20px);
+    animation: showContent 0.5s 1s linear forwards;
+}
+
+@keyframes showContent {
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+
+.hero .txt-hero .title {
+    animation-delay: 1.2s
+}
+
+.hero .txt-hero .description {
+    animation-delay: 1.4s
+}
+
+.hero .txt-hero .buttons {
+    animation-delay: 1.4s
+}
+
 /* ----------------  Estilo about ----------------  */
 
 .about {
@@ -310,8 +339,7 @@ section.hero::before {
 .txt-about p {
     font-size: 1rem;
     color: var(--cor-style-p);
-    margin: 30px 0 26px 0;
-
+    margin: 30px 0 8px 0;
 }
 
 .txt-about .border {
@@ -425,7 +453,7 @@ section.hero::before {
     flex: 1;
 }
 
-.info-adult .card-check {  
+.info-adult .card-check {
     padding: 20px 0;
 }
 
@@ -457,11 +485,11 @@ section.hero::before {
     justify-content: center;
     padding: 8px;
     gap: 10px;
-    
+
 }
 
 .cards-infantil span {
-    font-size: 0.6rem;   
+    font-size: 0.6rem;
     color: var(--cor-style-p);
 }
 
@@ -475,7 +503,7 @@ section.hero::before {
     border-radius: 5px;
     background-color: var(--cor-card);
 }
- 
+
 .card-cta {
     display: grid;
     justify-content: center;
@@ -704,7 +732,7 @@ section.hero::before {
 .depoimentos .box-depoimentos {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     color: var(--cor-style-p);
     font-size: 0.65rem;
 }
@@ -800,6 +828,38 @@ section .interface-cta {
     opacity: .9;
     font-weight: bolder;
     box-shadow: -1px 8px 25px var(--cor-master-txt);
+}
+
+/* ---------------- Estilo voltar ao topo ---------------- */
+
+.back-to-top {
+    background: transparent;
+    color: var(--cor-style);
+    cursor: pointer;
+    z-index: 999;
+    border-radius: 4px;
+
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+
+    line-height: 0;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: 0.3s;
+    transform: translateY(100%);
+}
+
+.back-to-top i {
+    font-size: 2rem;
+}
+
+.back-to-top.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* ---------------- Estilo Footer ---------------- */
