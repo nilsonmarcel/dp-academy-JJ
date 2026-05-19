@@ -481,7 +481,7 @@ section.hero::before {
     margin-top: 8px;
 }
 
-.info-infantil  span {
+.info-infantil span {
     color: var(--cor-logo);
     font-size: 1.1rem;
 }
@@ -492,8 +492,8 @@ section.hero::before {
 }
 
 .cards-infantil {
-    display: grid;   
-    grid-template-columns: 1fr 1fr; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     padding: 8px;
     gap: 10px;
@@ -513,7 +513,7 @@ section.hero::before {
     background-color: var(--cor-card);
 }
 
-.card-foco { 
+.card-foco {
     display: grid;
     grid-column: 1/3;
     margin: 0 auto;
