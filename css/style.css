@@ -173,20 +173,23 @@ section.hero .slider-container .slider-box {
     inset: 0;
     overflow: hidden;
     /* opacity: 0; */
+    transition: .5s;
 }
 
-section.hero::after {
+section.hero .slider-container .slider-box::after {
     content: '';
     width: 100%;
     height: 100%;
-    position: relative;
+    position: absolute;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7));
+    bottom: 0;
     top: 0;
     left: 0;
-    z-index: 55555;
+    z-index: 2;
 }
 
 .img-hero {
+    filter: grayscale(100%);
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -196,13 +199,20 @@ section.hero .slider-box .txt-hero {
     position: absolute;
     left: 10%;
     top: 35%;
-    z-index: 1;
+    z-index: 3;
 
     width: 80%;
     max-width: 600px;
 }
 
 .txt-hero h1 {
+    color: var(--cor-accent);
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 35px;
+}
+
+.txt-hero h2 {
     color: var(--cor-accent);
     font-size: 2.5rem;
     font-weight: bold;
@@ -234,13 +244,15 @@ section.hero .slider-box .txt-hero {
 }
 
 section.hero .slider-box.ativo h1,
+section.hero .slider-box.ativo h2,
 section.hero .slider-box.ativo p {
     animation: animatexto .5s ease-in-out .7s forwards;
     transform: translateY(60px);
     opacity: 0;
 }
 
-section.hero .slider-box.ativo h1 {
+section.hero .slider-box.ativo h1,
+section.hero .slider-box.ativo h2 {
     animation-delay: .3s;
 }
 
@@ -248,35 +260,6 @@ section.hero .slider-box.ativo h1 {
     opacity: 1;
     z-index: 11111;
 }
-
-/* .hero .txt-hero .title, 
-.hero .txt-hero .description,
-.hero .txt-hero .buttons {
-    opacity: 0;
-    filter: blur();
-    transform: translateY(60px);
-    animation: showContent 0.5s 1s linear forwards;
-}
-
-@keyframes showContent {
-    to {
-        opacity: 1;
-        filter: blur(0);
-        transform: translateY(0);
-    }
-}
-
-.hero .txt-hero .title {
-    animation-delay: 1.2s
-}
-
-.hero .txt-hero .description {
-    animation-delay: 1.4s
-}
-
-.hero .txt-hero .buttons {
-    animation-delay: 1.4s
-}*/
 
 .setas {
     width: 100%;
@@ -332,6 +315,11 @@ section.hero .slider-box.ativo h1 {
 
 .btn-nav-box .btn-nav:hover {
     background-color: var(--cor-accent);
+}
+
+.btn-nav-box .btn-nav.ativo {
+    background-color: var(--cor-accent);
+    width: 50px;
 }
 
 /* ----------------  Estilo about ----------------  */
