@@ -77,5 +77,5 @@ btnNav.forEach((btn,index)=>{
 
 setInterval(
 proximoSlide,
-5000
+35000
 );

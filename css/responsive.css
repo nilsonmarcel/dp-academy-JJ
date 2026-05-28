@@ -42,17 +42,26 @@
 
     /* Estilo Hero */
 
+    section.hero .slider-box .txt-hero {
+        left: 15%;
+        top: 30%;
+    }
+
+    .txt-hero h2 {
+        color: var(--cor-accent);
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 35px;
+    }
+
     .txt-hero p {
-        border-left: 2px solid var(--cor-logo);
-        font-size: 1rem;
-        color: var(--cor-style-p);
-        margin: 70px 0 70px 0;
-        padding-left: 15px;
+        margin: 50px 16px 30px 0;
+        max-width: 340px;
     }
 
     .button {
-    color: var(--cor-accent);
-}
+        color: var(--cor-accent);
+    }
 
     /* Estilo About */
     .about>.interface-about {
@@ -118,48 +127,49 @@
     /*----------------  Estilo Schedules ---------------- */
 
     .interface-schedules {
-    margin-top: 50px;
-}
+        margin-top: 50px;
+    }
 
     .grid-schedule {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    gap: 10px;
-    padding: 25px;
-}
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 10px;
+        padding: 25px;
+    }
 
-.info-adult {
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;
-}
+    .info-adult {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
 
-.card-left {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-}
+    .card-left {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
 
-.card-right {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-}
+    .card-right {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
 
-.grid-schedule p span {
-    font-size: 0.9rem;
-}
+    .grid-schedule p span {
+        font-size: 0.9rem;
+    }
 
-.card-adult,
-.card-adult-night,
-.kids-card,
-.saturday-card,
-.card-adult-nogi {  
-    padding: 10px 0;
-}
+    .card-adult,
+    .card-adult-night,
+    .kids-card,
+    .saturday-card,
+    .card-adult-nogi {
+        padding: 10px 0;
+    }
 
-.card-cta .button {
-    color: var(--cor-accent);
-    padding: 7px 10px;
-}
+    .card-cta .button {
+        color: var(--cor-accent);
+        padding: 7px 10px;
+    }
+
     /* ----------------  Estilo programa de treinamento ----------------  */
     .programa-tr {
         padding: 30px;
@@ -176,7 +186,7 @@
     .programa-tr article #competicao {
         grid-column: unset;
         grid-row: unset;
-        height: 250px;
+        height: 100vh;
         box-shadow: none;
     }
 
@@ -221,10 +231,10 @@
     }
 
     /* ---------------- Estilo voltar ao topo ---------------- */
-    
+
     .back-to-top {
-    display: none;
-}
+        display: none;
+    }
 
     /* ---------------- Estilo Footer ---------------- */
 
@@ -269,50 +279,50 @@
         pointer-events: none;
     }
 
-        .box-maps.active {
-            left: 50%;
-            transform: translateX(-50%);
-            pointer-events: auto;
-        }
-    
-        .box-maps iframe {
-            width: 100%;
-            height: 100%;
-        }
+    .box-maps.active {
+        left: 50%;
+        transform: translateX(-50%);
+        pointer-events: auto;
+    }
+
+    .box-maps iframe {
+        width: 100%;
+        height: 100%;
+    }
 
 }
 
 @media (max-width: 460px) {
 
-     /*----------------  Estilo Schedules 460px---------------- */
+    /*----------------  Estilo Schedules 460px---------------- */
 
     .interface-schedules {
-    margin-top: 50px;
-}
+        margin-top: 50px;
+    }
 
     .grid-schedule {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 25px;
-}
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 25px;
+    }
 
-.cards-infantil {
-    display: flex;  
-    flex-direction: column;
-    padding: 8px;
-    gap: 10px;
+    .cards-infantil {
+        display: flex;
+        flex-direction: column;
+        padding: 8px;
+        gap: 10px;
 
-}
+    }
 
 
-.card-auto,
-.card-social,
-.card-motor,
-.card-rotina {  
-    margin: 0 auto;
-    width: 50%;
-}
+    .card-auto,
+    .card-social,
+    .card-motor,
+    .card-rotina {
+        margin: 0 auto;
+        width: 50%;
+    }
 
 
 }

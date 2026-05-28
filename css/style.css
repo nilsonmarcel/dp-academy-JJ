@@ -144,12 +144,12 @@ header .menu ul li a:hover {
     top: 0;
     left: 100%;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: var(--cor-primary-body);
     opacity: 0.98;
     text-align: right;
     padding: 32px 0;
-    z-index: 999;
+    z-index: 999999;
     pointer-events: none;
 }
 
@@ -223,7 +223,7 @@ section.hero .slider-box .txt-hero {
     border-left: 2px solid var(--cor-logo);
     font-size: 1rem;
     color: var(--cor-style-p);
-    margin: 16px 0 46px 0;
+    margin: 46px 16px;
     padding-left: 15px;
 }
 
@@ -232,6 +232,8 @@ section.hero .slider-box .txt-hero {
 }
 
 .txt-hero .button {
+    position: relative;
+    z-index: 6;
     box-shadow: -1px 4px 11px var(--cor-button-txt);
     font-size: 0.9rem;
 }
@@ -258,7 +260,7 @@ section.hero .slider-box.ativo h2 {
 
 .slider-container .slider-box.ativo {
     opacity: 1;
-    z-index: 11111;
+    z-index: 4;
 }
 
 .setas {
@@ -273,7 +275,8 @@ section.hero .slider-box.ativo h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 22222;
+    z-index: 5;
+    pointer-events: none;
 }
 
 .setas button {
@@ -285,6 +288,7 @@ section.hero .slider-box.ativo h2 {
     cursor: pointer;
     font-size: 1.5rem;
     transition: .2s;
+    pointer-events: auto;
 }
 
 .setas button:hover {
@@ -295,8 +299,8 @@ section.hero .slider-box.ativo h2 {
     width: 100%;
     position: absolute;
     left: 0;
-    bottom: 50px;
-    z-index: 777777;
+    bottom: 85px;
+    z-index: 5;
 
     display: flex;
     justify-content: center;
