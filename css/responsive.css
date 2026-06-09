@@ -42,26 +42,7 @@
 
     /* Estilo Hero */
 
-    section.hero .slider-box .txt-hero {
-        left: 15%;
-        top: 30%;
-    }
 
-    .txt-hero h2 {
-        color: var(--cor-accent);
-        font-size: 2rem;
-        font-weight: bold;
-        line-height: 35px;
-    }
-
-    .txt-hero p {
-        margin: 50px 16px 30px 0;
-        max-width: 340px;
-    }
-
-    .button {
-        color: var(--cor-accent);
-    }
 
     /* Estilo About */
     .about>.interface-about {
@@ -186,7 +167,6 @@
     .programa-tr article #competicao {
         grid-column: unset;
         grid-row: unset;
-        height: 100vh;
         box-shadow: none;
     }
 
@@ -293,6 +273,38 @@
 }
 
 @media (max-width: 460px) {
+
+    /* Estilo Hero */
+
+    section.hero .slider-box .txt-hero {
+        left: 15%;
+        top: 30%;
+    }
+
+    .txt-hero h2 {
+        color: var(--cor-accent);
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 35px;
+    }
+
+    .txt-hero p {
+        margin: 50px 16px 30px 0;
+        max-width: 340px;
+    }
+
+    .button {
+        color: var(--cor-accent);
+    }
+
+    /* ----------------  Estilo programa de treinamento ----------------  */
+
+    .programa-tr article #iniciante,
+    .programa-tr article #avancado,
+    .programa-tr article #infantil,
+    .programa-tr article #competicao {
+        height: 100vh;
+    }
 
     /*----------------  Estilo Schedules 460px---------------- */
 

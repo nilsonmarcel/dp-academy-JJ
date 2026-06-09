@@ -32,14 +32,16 @@ html {
 
 body {
     background-color: var(--cor-primary-body);
+    overflow-x: hidden;
 }
+
 
 .inteface-menu,
 .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    padding: 10px;
 }
 
 .menu-list {
@@ -385,7 +387,8 @@ section.hero .slider-box.ativo h2 {
     background-color: var(--cor-master);
     color: var(--cor-master-txt);
     font-weight: bolder;
-    font-size: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
     position: relative;
     z-index: 3;
     width: 200px;
@@ -443,7 +446,7 @@ section.hero .slider-box.ativo h2 {
 }
 
 .Metodoligia .card-meto {
-    width: 352px;
+    width: 250px;
     height: 208px;
 
 }
@@ -452,6 +455,10 @@ section.hero .slider-box.ativo h2 {
     color: var(--cor-logo);
     font-size: 1.8rem;
 
+}
+
+.Metodoligia .txt-tr {
+    padding-bottom: 40px;
 }
 
 .Metodoligia .card-meto h3 {
@@ -463,6 +470,43 @@ section.hero .slider-box.ativo h2 {
     color: var(--cor-style-p);
     font-size: 0.8rem;
 }
+
+/* ----------------  Estilo Social ----------------  */
+
+
+.social .interface-social {
+    width: 100%;
+    height: 200px;
+    background-color: var(--cor-tertiary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.interface-social article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size: 1.2rem;
+    gap: 3px;
+}
+
+.box-social {
+    background-color: var(--cor-primary-body);
+    color: var(--cor-style-p);
+    padding: 30px 40px;
+}
+
+.box-social h3 {
+    font-size: 1.8rem;
+    color: var(--cor-logo);
+    padding-bottom: 10px;
+}
+
+.box-social p {
+    font-size: 0.8rem;
+    color: var(--cor-style-p);
+}
+
 
 /* ----------------  Estilo Horário ----------------  */
 
@@ -803,6 +847,16 @@ section.hero .slider-box.ativo h2 {
     font-weight: bolder;
     opacity: 0.4;
     z-index: 0;
+}
+
+.depoimentos .box-txt a {
+    text-decoration: none;
+    color: var(--cor-style-p);
+    cursor: pointer;
+}
+
+.depoimentos .box-txt a:hover {
+    opacity: .7;
 }
 
 .depoimentos .interface-depoimento {
