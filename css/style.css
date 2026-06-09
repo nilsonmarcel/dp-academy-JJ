@@ -476,19 +476,18 @@ section.hero .slider-box.ativo h2 {
 
 .social .interface-social {
     width: 100%;
-    height: 200px;
     background-color: var(--cor-tertiary);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .interface-social article {
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    font-size: 1.2rem;
+    padding: 30px;
     gap: 3px;
 }
+
+
 
 .box-social {
     background-color: var(--cor-primary-body);

@@ -105,6 +105,12 @@
 
     }
 
+    /*----------------  Estilo Social ---------------- */
+
+    .interface-social article {
+        grid-template-columns: 1fr 1fr;
+    }
+
     /*----------------  Estilo Schedules ---------------- */
 
     .interface-schedules {
@@ -272,7 +278,20 @@
 
 }
 
-@media (max-width: 460px) {
+
+
+
+@media (max-width: 525px) {
+
+    /*----------------  Estilo Social ---------------- */
+
+    .interface-social article {
+        grid-template-columns: 1fr;
+    }
+
+    .box-social {
+        align-items: center;
+    }
 
     /* Estilo Hero */
 
