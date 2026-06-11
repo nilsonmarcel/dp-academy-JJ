@@ -174,7 +174,6 @@ section.hero .slider-container .slider-box {
     position: absolute;
     inset: 0;
     overflow: hidden;
-    /* opacity: 0; */
     transition: .5s;
 }
 
@@ -378,6 +377,11 @@ section.hero .slider-box.ativo h2 {
     padding: 20px;
 }
 
+.img-about img:hover {
+    scale: 1.05;
+    transition: transform duration(0.5s);
+}
+
 .mestre {
     position: absolute;
     bottom: 0;
@@ -483,7 +487,7 @@ section.hero .slider-box.ativo h2 {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 30px;
+    padding: 30px 60px;
     gap: 3px;
 }
 
@@ -781,6 +785,11 @@ section.hero .slider-box.ativo h2 {
     z-index: 0;
 }
 
+.programa-tr article .box-programa:hover img {
+    filter: grayscale(50%);
+    transition: .5s;
+}
+
 .programa-tr article #avancado img {
     object-position: center bottom;
 }
@@ -799,6 +808,11 @@ section.hero .slider-box.ativo h2 {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.1) 100%);
 
     z-index: 1;
+}
+
+.programa-tr article .box-programa:hover::before {
+    background: linear-gradient (to top, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.1) 100%);
+    transition: .5s;
 }
 
 .programa-tr article #iniciante {
@@ -986,7 +1000,7 @@ section .interface-cta {
 
     position: fixed;
     right: 1rem;
-    bottom: 1rem;
+    bottom: 1.1rem;
 
     line-height: 0;
 
@@ -1007,11 +1021,148 @@ section .interface-cta {
     transform: translateY(0);
 }
 
+/* ---------------- Estilo Location ---------------- */
+
+.interface-location {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor-tertiary);
+    color: var(--cor-accent);
+    padding: 20px;
+}
+
+.box-location-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.interface-location .txt-location {
+    left: 10%;
+    top: 35%;
+
+    width: 50%;
+}
+
+.interface-location .txt-location h2 {
+    font-size: 3rem;
+}
+
+.interface-location .txt-location h2 span {
+    color: var(--cor-logo);
+}
+
+.card-location {
+    display: flex;
+    padding-top: 25px;
+}
+
+.card-location i {
+    color: var(--cor-logo);
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.interface-location .txt-location p {
+    color: var(--cor-style-p);
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+.interface-location .box-location h3 {
+    font-size: 1.5rem;
+}
+
+.interface-location .box-location p {
+    color: var(--cor-style-p);
+    font-size: 1rem;
+    margin-left: 35px;
+}
+
+/* Estilo maps */
+
+.btn-box-maps {
+    background: var(--cor-button);
+    max-width: 320px;
+    height: 50px;
+    border-radius: 4px;
+    box-shadow: -1px 4px 11px var(--cor-button-txt);
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.btn-box-maps i {
+    font-size: 1.8rem;
+    color: var(--cor-primary);
+}
+
+.btn-box-maps i:hover {
+    color: var(--cor-accent);
+    opacity: .9;
+}
+
+.btn-box-maps span {
+    font-size: 1.4rem;
+    color: var(--cor-button-txt);
+}
+
+.btn-box-maps span:hover {
+    color: var(--cor-accent);
+}
+
+.box-maps .bi-x-lg {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--cor-accent);
+    padding: 24px;
+    cursor: pointer;
+}
+
+.card-maps {
+    background-color: #00ff88;
+    width: 600px;
+    height: 400px;
+}
+
+.card-maps .box-maps {
+    right: 10px;
+    border-radius: 8px;
+    left: 90%;
+    width: 50%;
+    max-width: 600px;
+
+    display: none;
+    position: fixed;
+    top: 2%;
+    background-color: var(--cor-primary-body);
+    opacity: 0.95;
+    text-align: center;
+    padding: 25px 0;
+    z-index: 999;
+    pointer-events: none;
+}
+
+.box-maps.open-maps {
+    display: block;
+    left: 50%;
+    pointer-events: initial;
+    transition: .8s;
+}
+
+/* fim maps */
+
 /* ---------------- Estilo Footer ---------------- */
 
 footer {
     background-color: var(--cor-about);
-    height: 500px;
+    height: 350px;
 }
 
 footer .interface-footer .txt-footer {
@@ -1074,63 +1225,6 @@ footer .interface-footer .btn-box-maps:hover {
     opacity: .9;
 }
 
-/* Estilo footer maps */
-
-.btn-box-maps {
-    background: var(--cor-button);
-    max-width: 520px;
-    border-radius: 4px;
-    box-shadow: -1px 4px 11px var(--cor-button-txt);
-    padding: 2px;
-}
-
-.btn-box-maps i {
-    font-size: 1.8rem;
-    color: var(--cor-primary);
-}
-
-.btn-box-maps i:hover {
-    color: var(--cor-accent);
-    opacity: .9;
-}
-
-.btn-box-maps span {
-    color: var(--cor-button-txt);
-}
-
-.btn-box-maps span:hover {
-    color: var(--cor-accent);
-}
-
-.box-maps .bi-x-lg {
-    font-size: 2rem;
-    color: var(--cor-logo);
-    padding: 24px;
-}
-
-.box-maps {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 100%;
-    width: 100vw;
-    height: 100%;
-    background-color: var(--cor-primary-body);
-    opacity: 0.95;
-    text-align: center;
-    padding: 32px 0;
-    z-index: 999;
-    pointer-events: none;
-}
-
-.box-maps.open-maps {
-    display: block;
-    left: 0;
-    pointer-events: initial;
-    transition: .8s;
-}
-
-/* fim footer maps */
 
 .interface-footer hr {
     border: none;

@@ -109,6 +109,7 @@
 
     .interface-social article {
         grid-template-columns: 1fr 1fr;
+        padding: 30px 60px;
     }
 
     /*----------------  Estilo Schedules ---------------- */
@@ -220,6 +221,28 @@
 
     .back-to-top {
         display: none;
+    }
+
+    /* ---------------- Estilo Location ---------------- */
+
+    .interface-location {
+        display: flex;
+        flex-direction: column;
+        height: 700px;
+        padding: 20px;
+    }
+
+    .interface-location .txt-location h2 {
+        font-size: 2rem;
+    }
+
+    .interface-location .box-location h3 {
+        font-size: 1.2rem;
+    }
+
+    .interface-location .box-location p,
+    .interface-location .txt-location p {
+        font-size: 0.9rem;
     }
 
     /* ---------------- Estilo Footer ---------------- */
